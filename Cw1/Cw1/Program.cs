@@ -47,7 +47,7 @@ namespace Cw1
 
                 var znalezione = from e in list where e.StartsWith("A") select e;
 
-                var znalezione2 = list.Where(s => string.StartsWith("A"));
+                var znalezione2 = list.Where(s => s.StartsWith("A"));
 
 
             string html = await result.Content.ReadAsStringAsync();
